@@ -1,0 +1,74 @@
+.login-container {
+    background-color: #5FAB64; /* Cor de fundo mais escura */
+    border-radius: 20px; /* Borda mais arredondada */
+    color: #fff; /* Texto branco */
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 800px;
+    margin: auto; /* Centralizando o container */
+    margin-top: 100px; /* Espaçamento do topo */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+    font-family: 'Arial', sans-serif; /* Fonte alternativa */
+}
+
+.login-form {
+    display: flex;
+    width: 50%;
+    height: 500px; /* Altura ainda maior para um visual mais imponente */
+}
+
+.form-section {
+    padding: 50px; /* Padding maior para mais espaço interno */
+    transition: background-color 0.3s ease; /* Transição de cor de fundo */
+}
+
+.form-section.cliente {
+    background-color: #5FAB64; /* Cor de fundo mais escura */
+}
+
+.form-section.funcionario {
+    background-color: #657c66; /* Cor de fundo ainda mais escura */
+}
+
+h2 {
+    margin-bottom: 30px; /* Espaçamento maior para os títulos */
+    font-size: 24px; /* Tamanho de fonte maior */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espaçamento maior entre os campos */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Espaçamento maior para os rótulos */
+    font-size: 18px; /* Tamanho de fonte maior */
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 2px solid #555; /* Borda mais grossa */
+    border-radius: 8px; /* Borda mais arredondada */
+    padding: 15px; /* Espaçamento interno maior */
+    width: 100%;
+    font-size: 16px; /* Tamanho de fonte um pouco menor */
+    background-color: #333; /* Cor de fundo mais escura */
+    color: #fff; /* Texto branco */
+}
+
+button {
+    background-color: #ff5f6d; /* Cor de fundo vibrante */
+    border: none;
+    border-radius: 10px; /* Borda mais arredondada */
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 30px; /* Padding maior */
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transição de cor de fundo */
+    font-size: 20px; /* Tamanho de fonte maior */
+}
+
+button:hover {
+    background-color: #ff3d4a; /* Cor de fundo mais vibrante no hover */
+}

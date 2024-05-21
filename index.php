@@ -14,7 +14,7 @@ include 'functions.php';
             <img src="img/img1.webp" class="d-block w-100" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
         </div>
         <div class="carousel-item"> 
-            <img src="img/img2.webp" class="d-block w-100" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
+            <img src="img/card2.jpg" class="d-block w-100" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
         </div>
         <div class="carousel-item">
             <img src="img/img3.webp" class="d-block w-100" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
