@@ -34,8 +34,7 @@ echo <<<EOT
     	<div>
     		<h1> Loca aqui!</h1>
             <a href="index.php"><i class="fas fa-home"></i>Home</a>
-    		<a href="read.php"><i class="fas fa-car"></i>Veículos Disponiveis</a>
-            <a href="createCliente.php"><i class="fas fa-user"></i>Cadastrar Cliente</a>
+    		<a href="carroDisponivel.php"><i class="fas fa-car"></i>Veículos Disponiveis</a>
             <a href="login.php"><i class="fas fa-user"></i>Login</a>
 
             

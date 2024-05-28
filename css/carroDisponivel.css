@@ -1,0 +1,32 @@
+/* Estilização da tabela */
+.table-container {
+    max-width: 50%; /* Definindo a largura da tabela como 50% da tela */
+    margin: 0 auto; /* Centralizando a tabela */
+    border: 2px solid green; /* Adicionando borda verde */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 6px; /* Reduzindo o espaçamento interno */
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para linhas alternadas */
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para linhas ímpares */
+.table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}

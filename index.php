@@ -2,6 +2,7 @@
 include 'functions.php';
 ?>
 <?= template_header ('Loca aqui!')?>
+<link rel="stylesheet" href="css/style.css">
 
 <div class="content text-center">
     <h2 style="color: #F1A204;">Se o assunto for economia de tempo, a solução mais prática, confortável e acessível para você e sua família é Aqui!</h2>
