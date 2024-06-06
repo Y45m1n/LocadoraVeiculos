@@ -46,7 +46,7 @@ include 'functions.php';
                     Com um design moderno e economia de combustível, oferece conforto e agilidade em cada viagem. <br>
                      Experimente a praticidade e versatilidade do Fiat Mobi.
 </p>
-                    <a href="create.php" class="btn btn-primary">Realizar Reserva</a> 
+                    <a href="reserva.php" class="btn btn-primary">Realizar Reserva</a> 
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@ include 'functions.php';
                 
             
                   </p>
-                    <a href="create.php" class="btn btn-primary">Realizar Reserva</a> 
+                    <a href="reserva.php" class="btn btn-primary">Realizar Reserva</a> 
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@ include 'functions.php';
                      Com grande capacidade de pessoas e bagagens, oferece versatilidade e praticidade. 
                      Experimente o amplo espaço interior e o conforto da minivan.
 </p>
-<a href="create.php" class="btn btn-primary">Realizar Reserva</a> 
+<a href="reserva.php" class="btn btn-primary">Realizar Reserva</a> 
                 </div>
             </div>
         </div>

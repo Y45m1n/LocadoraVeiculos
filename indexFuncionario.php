@@ -23,21 +23,32 @@ include 'functions.php';
         </div>
         <div class="col-md-4 mb-4">
             <div class="card" style="align-items:center;">
-                <img src="img/" class="card-img-top" alt="Imagem do Card 1" style="width:250px; height: 222px;">
+                <img src="img/listarCliente.png" class="card-img-top" alt="Imagem do Card 1" style="width:200px; height: 200px;">
                 <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    
-                    <a href="create.php" class="btn btn-primary"></a> 
+                
+                <h5 class="card-title">Listar Cliente</h5>
+                    <a href="listarCliente.php" class="btn btn-primary">Listar</a> 
                 </div>
             </div>
         </div>
         <div class="col-md-4 mb-4">
             <div class="card" style="align-items:center;">
-                <img src="img/" class="card-img-top" alt="Imagem do Card 3" style="width:300px; height: 200px;">
+                <img src="img/cadastroCarro.avif" class="card-img-top" alt="Imagem do Card 3" style="width:200px; height: 200px;">
                 <div class="card-body">
-                    <h5 class="card-title"></h5>
+                    <h5 class="card-title">Cadastrar Carro</h5>
                     
-<a href="create.php" class="btn btn-primary"></a> 
+<a href="createVeiculo.php" class="btn btn-primary">Cadastrar</a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card" style="align-items:center;">
+                <img src="img/listarCarro.avif" class="card-img-top" alt="Imagem do Card 1" style="width:200px; height: 200px;">
+                <div class="card-body">
+                
+                <h5 class="card-title">Listar Carro</h5>
+                    <a href="listarVeiculo.php" class="btn btn-primary">Listar</a> 
                 </div>
             </div>
         </div>

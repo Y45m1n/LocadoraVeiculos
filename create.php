@@ -27,8 +27,12 @@ if (!empty($_POST)) {
 
 <?=template_header('Cadastro de Clientes')?>
 <link rel="stylesheet" href="css/style.css">
+
+
 <div class="content update">
+<a href="indexFuncionario.php"><i class="fas fa-home"></i>Home Funcionario</a>
     <h2>Registrar Cliente</h2>
+ 
     <form action="create.php" method="post">
         <label for="sobrenome">Sobrenome</label>
         <input type="text" name="sobrenome" placeholder="Seu Sobrenome" id="sobrenome">
@@ -48,7 +52,7 @@ if (!empty($_POST)) {
         <input type="text" name="celular" placeholder="(XX) X.XXXX-XXXX" id="celular">
         <br>
         <div class="center">
-            <input type="submit" value="Criar">
+            <input type="submit" value="Cadastrar">
         </div> 
     </form>
     <?php if ($msg): ?>
