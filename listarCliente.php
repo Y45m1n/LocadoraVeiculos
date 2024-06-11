@@ -8,7 +8,7 @@ $page = isset($_GET['page']) && is_numeric($_GET['page']) ? (int)$_GET['page'] :
 $records_per_page = 10;
 
 // Preparar a instrução SQL e obter registros da tabela contacts, LIMIT irá determinar a página
-$stmt = $pdo->prepare('SELECT * FROM cliente ORDER BY id_cliente OFFSET :offset LIMIT :limit');
+$stmt = $pdo->prepare('SELECT * FROM cliente ORDER BY id OFFSET :offset LIMIT :limit');
 $stmt->bindValue(':offset', ($page - 1) * $records_per_page, PDO::PARAM_INT);
 $stmt->bindValue(':limit', $records_per_page, PDO::PARAM_INT);
 $stmt->execute();
@@ -34,7 +34,6 @@ $num_contacts = $pdo->query('SELECT COUNT(*) FROM cliente')->fetchColumn();
                 <td>Cidade</td>
                 <td>Estado</td>
                 <td>Endereço</td>
-                <td>Id cliente</td>
                 <td>Email</td>
                 <td>Celular</td>
                 <td></td>
@@ -49,12 +48,11 @@ $num_contacts = $pdo->query('SELECT COUNT(*) FROM cliente')->fetchColumn();
                 <td><?=$contact['cidade']?></td>
                 <td><?=$contact['estado']?></td>
                 <td><?=$contact['endereco']?></td>
-                <td><?=$contact['id_cliente']?></td>
                 <td><?=$contact['email']?></td>
                 <td><?=$contact['celular']?></td>
                 <td class="actions">
-                    <a href="editCliente.php?id_cliente=<?=$contact['id_cliente']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
-                    <a href="deleteCliente.php?id_cliente=<?=$contact['id_cliente']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
+                    <a href="editCliente.php?id=<?=$contact['id']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
+                    <a href="deleteCliente.php?id=<?=$contact['id']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
                 </td>
             </tr>
             <?php endforeach; ?>

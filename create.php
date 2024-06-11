@@ -9,12 +9,11 @@ if (!empty($_POST)) {
     $cidade = isset($_POST['cidade']) ? $_POST['cidade'] : '';
     $estado = isset($_POST['estado']) ? $_POST['estado'] : '';
     $endereco = isset($_POST['endereco']) ? $_POST['endereco'] : '';
-    $id_cliente = isset($_POST['id_cliente']) ? $_POST['id_cliente'] : NULL;
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $celular = isset($_POST['celular']) ? $_POST['celular'] : '';
-    if (!empty($sobrenome) && !empty($nome) && !empty($cidade) && !empty($estado) && !empty($endereco) && !empty($id_cliente) && !empty($email) && !empty($celular)) {
-        $stmt = $pdo->prepare('INSERT INTO cliente (sobrenome, nome, cidade, estado, endereco, id_cliente, email, celular) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
-        if ($stmt->execute([$sobrenome, $nome, $cidade, $estado, $endereco, $id_cliente, $email, $celular])) {
+    if (!empty($sobrenome) && !empty($nome) && !empty($cidade) && !empty($estado) && !empty($endereco)  && !empty($email) && !empty($celular)) {
+        $stmt = $pdo->prepare('INSERT INTO cliente (sobrenome, nome, cidade, estado, endereco,  email, celular) VALUES (?, ?, ?, ?, ?, ?, ?)');
+        if ($stmt->execute([$sobrenome, $nome, $cidade, $estado, $endereco,  $email, $celular])) {
             $msg = 'Cliente cadastrado com sucesso!';
         } else {
             $msg = 'Erro ao cadastrar cliente. Por favor, tente novamente.';
@@ -44,8 +43,8 @@ if (!empty($_POST)) {
         <input type="text" name="estado" placeholder="Seu Estado" id="estado">
         <label for="endereco">Endereço</label>
         <input type="text" name="endereco" placeholder="Seu Endereço" id="endereco">
-        <label for="id_cliente">ID Cliente</label>
-        <input type="text" name="id_cliente" placeholder="ID do Cliente" id="id_cliente">
+       
+      
         <label for="email">Email</label>
         <input type="text" name="email" placeholder="seuemail@seuprovedor.com.br" id="email">
         <label for="celular">Celular</label>

@@ -36,6 +36,7 @@ echo <<<EOT
             <a href="index.php"><i class="fas fa-home"></i>Home</a>
     		<a href="carroDisponivel.php"><i class="fas fa-car"></i>Veículos Disponiveis</a>
             <a href="login.php"><i class="fas fa-user"></i>Login</a>
+                 <a href="loginCliente.php"><i class="fas fa-user"></i>Login Cliente</a>
 
             
          

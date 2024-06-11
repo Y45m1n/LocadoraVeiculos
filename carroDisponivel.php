@@ -25,7 +25,7 @@ $num_contacts =  $pdo->query('SELECT COUNT(*) FROM carro WHERE disponibilidade =
                 <td>Disponibilidade</td>
                 <td>Ano</td>
                 <td>Modelo</td>
-                <td>Id Carro</td>
+                <td>Valor</td>
                 <td></td>
             </tr>
         </thead>
@@ -37,10 +37,12 @@ $num_contacts =  $pdo->query('SELECT COUNT(*) FROM carro WHERE disponibilidade =
                     <td><?=$contact['disponibilidade']?></td>
                     <td><?=$contact['ano']?></td>
                     <td><?=$contact['modelo']?></td>
-                    <td><?=$contact['id_carro']?></td>
+                    <td><?=$contact['valor']?></td>
                     <td class="actions">
           
-<a href="reserva.php?id_carro=<?=$contact['id_carro']?>" class="edit"><i class="fas fa-shopping-cart fa-xs"></i></a>
+
+ <a href="reserva.php?id_carro=<?=$contact['id_carro']?>" class="edit"><i class="fas fa-shopping-cart fa-xs"></i></a>
+
 
                     </td>
                 </tr>

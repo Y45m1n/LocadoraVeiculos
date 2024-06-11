@@ -34,7 +34,8 @@ $num_contacts = $pdo->query('SELECT COUNT(*) FROM carro')->fetchColumn();
                 <td>Disponibilidade</td>
                 <td>Ano</td>
                 <td>Modelo</td>
-                <td>Id Carro</td>
+                <td>Valor</td>
+
                 <td></td>
             </tr>
         </thead>
@@ -47,10 +48,11 @@ $num_contacts = $pdo->query('SELECT COUNT(*) FROM carro')->fetchColumn();
                 <td><?=$contact['disponibilidade']?></td>
                 <td><?=$contact['ano']?></td>
                 <td><?=$contact['modelo']?></td>
-                <td><?=$contact['id_carro']?></td>
+                <td><?=$contact['valor']?></td>
                 <td class="actions">
                     <a href="editarVeiculo.php?id_carro=<?=$contact['id_carro']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
-                    <a href="deleteVeiculo.php?id_carro=<?=$contact['id_carro']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
+                 <a href="reserva.php?id_carro=<?=$contact['id_carro']?>" class="edit"><i class="fas fa-shopping-cart fa-xs"></i></a>
+                 <a href="deleteVeiculo.php?id_carro=<?=$contact['id_carro']?>" class="edit"><i class="fas fa-trash fa-xs"></i></a>
                 </td>
             </tr>
             <?php endforeach; ?>
