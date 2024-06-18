@@ -5,12 +5,6 @@ $msg = '';
 
 session_start();
 
-// Verificar se o usuário está logado
-if (!isset($_SESSION['user_id'])) {
-    header('Location: loginCliente.php');
-    exit();
-    
-}
 
 if (isset($_GET['id_carro'])) {
     // Recuperar o ID do carro da URL
@@ -21,12 +15,11 @@ if (isset($_GET['id_carro'])) {
         $data_devolucao = isset($_POST['data_devolucao']) ? $_POST['data_devolucao'] : '';
         $data_locacao = isset($_POST['data_locacao']) ? $_POST['data_locacao'] : '';
         $valor_total = isset($_POST['valor_total']) ? $_POST['valor_total'] : '';
+        $email = isset($_POST['email']) ? $_POST['email'] : '';
 
-        // Obter o ID do cliente da sessão
-        $id = $_SESSION['user_id'];
 
-        $stmt = $pdo->prepare('INSERT INTO locacao (data_devolucao, data_locacao, valor_total, id_carro, id) VALUES (?,?,?,?,?)');
-        if ($stmt->execute([$data_devolucao, $data_locacao, $valor_total, $id_carro, $id])) {
+        $stmt = $pdo->prepare('INSERT INTO locacao (data_devolucao, data_locacao, valor_total, id_carro, email) VALUES (?,?,?,?,?)');
+        if ($stmt->execute([$data_devolucao, $data_locacao, $valor_total, $id_carro, $email])) {
             $msg = 'Locação realizada com sucesso!';
           
         } else {
@@ -50,6 +43,8 @@ if (isset($_GET['id_carro'])) {
     <input type="date" name="data_locacao" value="<?=date('Y-m-d');?>" id="data_locacao">
     <label for="valor_total">Valor total</label>
     <input type="text" name="valor_total" placeholder="Valor total da locação" id="valor_total">
+    <label for="email">Email</label>
+    <input type="text" name="email" placeholder="Email do cliente" id="email">
 
     <br>
     <div class="center">

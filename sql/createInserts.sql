@@ -87,9 +87,9 @@ Data_Devolucao DATE NOT NULL,
 Data_Locacao DATE NOT NULL,
 Valor_Total DECIMAL(7,2)  NOT NULL,
 Id_Carro INT NOT NULL ,
-Id_Cliente INT NOT NULL,
+Email VARCHAR(255) NOT NULL,
 FOREIGN KEY(Id_Carro) REFERENCES Carro (Id_Carro),
-FOREIGN KEY(Id_Cliente) REFERENCES Cliente (Id_Cliente)
+
 )
 SELECT *
 FROM Locacao;
